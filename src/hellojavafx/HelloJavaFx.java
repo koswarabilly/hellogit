@@ -30,6 +30,14 @@ public class HelloJavaFx extends Application {
                 System.out.println("Hello World!");
             }
         });
+        btn.setText("ALAMAK2");
+        btn.setOnAction(new EventHandler<ActionEvent>() {
+            
+            @Override
+            public void handle(ActionEvent event) {
+                System.out.println("Hello World!");
+            }
+        });
         
         StackPane root = new StackPane();
         root.getChildren().add(btn);
