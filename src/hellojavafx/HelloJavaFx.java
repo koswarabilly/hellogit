@@ -26,7 +26,7 @@ public class HelloJavaFx extends Application {
     public void start(Stage primaryStage) {
         Button btn = new Button();
         Label lbl = new Label();
-        btn.setText("lets Say 'Hello World' DONG");
+        btn.setText("apasih");
         btn.setOnAction(new EventHandler<ActionEvent>() {
             
             @Override
