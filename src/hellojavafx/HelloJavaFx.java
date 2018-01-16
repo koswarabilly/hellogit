@@ -10,6 +10,7 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
@@ -18,29 +19,26 @@ import javafx.stage.Stage;
  * @author Student
  */
 public class HelloJavaFx extends Application {
+
+ 
     
     @Override
     public void start(Stage primaryStage) {
         Button btn = new Button();
-        btn.setText("ALAMAK");
+        Label lbl = new Label();
+        btn.setText("apasih???");
         btn.setOnAction(new EventHandler<ActionEvent>() {
             
             @Override
             public void handle(ActionEvent event) {
                 System.out.println("Hello World!");
-            }
-        });
-        btn.setText("ALAMAK2");
-        btn.setOnAction(new EventHandler<ActionEvent>() {
-            
-            @Override
-            public void handle(ActionEvent event) {
-                System.out.println("Hello World!");
+                lbl.setText("Hello World!");
             }
         });
         
         StackPane root = new StackPane();
         root.getChildren().add(btn);
+        root.getChildren().add(lbl);
         
         Scene scene = new Scene(root, 300, 250);
         
