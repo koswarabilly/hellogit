@@ -19,12 +19,14 @@ import javafx.stage.Stage;
  * @author Student
  */
 public class HelloJavaFx extends Application {
+
+ 
     
     @Override
     public void start(Stage primaryStage) {
         Button btn = new Button();
-        Label lbl = new Label();
-        btn.setText("Say 'Hello World' DONG");
+        Label lbl = new Label(); 
+        btn.setText("bilang 'helloworld'");
         btn.setOnAction(new EventHandler<ActionEvent>() {
             
             @Override
